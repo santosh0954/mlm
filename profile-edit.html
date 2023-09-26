@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>MUSIC-X</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="bg-body-tertiary">
+    <nav class="navbar bg-white shadow-sm">
+      <div class="container-md container-fluid">
+        <a class="navbar-brand fw-semibold" href="./index.html">
+          MUSIC- <span class="text-danger">X</span>
+        </a>
+
+        <div>
+          <div class="dropdown">
+            <button
+              class="btn dropdown-toggle"
+              type="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              John
+            </button>
+            <ul
+              class="dropdown-menu shadow-sm dropdown-menu-end border-warning-subtle"
+            >
+              <li><a class="dropdown-item" href="#">Profile</a></li>
+              <div class="dropdown-divider"></div>
+              <li><a class="dropdown-item" href="#">Log out</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container py-5">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link active fs-6" data-bs-toggle="tab" href="#home"
+              >Info</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-6" data-bs-toggle="tab" href="#mlm">
+              MLM Status
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fs-6" data-bs-toggle="tab" href="#menu1"
+              >Gallery</a
+            >
+          </li>
+        </ul>
+
+        <div
+          class="tab-content bg-white p-4 shadow-sm border border-top-0 rounded-bottom rounded-end"
+        >
+          <section id="home" class="tab-pane fade active show">
+            <form>
+              <div class="row g-3">
+                <div class="col-md-3 text-center">
+                  <img
+                    src="./images/singers/singer2.jpg"
+                    alt="singer"
+                    class="img-thumbnail rounded-circle shadow-sm px-1 mb-3 mx-auto"
+                    style="width: 200px; height: 200px"
+                  />
+                  <div>
+                    <input
+                      type="file"
+                      name="profile"
+                      id="profile"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                    />
+                  </div>
+                </div>
+                <section class="col-md-8">
+                  <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input
+                      type="text"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                      id="name"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" class="form-label">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                      id="email"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="mob" class="form-label">Mob no</label>
+                    <input
+                      type="tel"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                      id="mob"
+                      aria-describedby="emailHelp"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="about" class="form-label">About me</label>
+                    <textarea
+                      name="about"
+                      id="about"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                      rows="10"
+                    ></textarea>
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label"
+                      >Old Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                      id="password"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input
+                      type="password"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                      id="password"
+                    />
+                  </div>
+                  <div class="mb-3">
+                    <label for="confPassword" class="form-label"
+                      >Confirm Password</label
+                    >
+                    <input
+                      type="password"
+                      class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                      id="confPassword"
+                    />
+                  </div>
+
+                  <button type="submit" class="btn btn-danger px-4 my-3">
+                    Update
+                  </button>
+                </section>
+              </div>
+            </form>
+          </section>
+          <section id="mlm" class="tab-pane fade">
+            <h6>John Doe</h6>
+            <p class="mb-4">
+              referral id:
+              <a href="http://abc.com/name=john?referral_id=4545458">
+                http://abc.com/name=john?referral_id=4545458
+              </a>
+            </p>
+            <div class="row g-3">
+              <section class="col-sm-4">
+                <div class="card shadow-sm bg-info-subtle border-0">
+                  <div class="card-body">
+                    <p class="fs-5 mb-0">
+                      Total Referrals: <strong> 05 </strong>
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section class="col-sm-4">
+                <div class="card shadow-sm bg-success-subtle border-0">
+                  <div class="card-body">
+                    <p class="fs-5 mb-0">
+                      Total Earning: <strong> $200 </strong>
+                    </p>
+                  </div>
+                </div>
+              </section>
+              <section class="col-sm-4">
+                <div class="card shadow-sm bg-warning-subtle border-0">
+                  <div class="card-body">
+                    <p class="fs-5 mb-0">Notification: <strong> 05 </strong></p>
+                  </div>
+                </div>
+              </section>
+            </div>
+            <!-- MLM diagam section start  -->
+            <section class="mlm py-4 overflow-auto">
+              <div class="tree">
+                <ul>
+                  <li>
+                    <a href="#">
+                      <img src="./images/users/user1.jpg" alt="img" />
+                      <span>Ronie</span>
+                    </a>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./images/users/user1.jpg" alt="img" />
+                          <span>Ronie</span>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <img src="./images/users/user1.jpg" alt="img" />
+                              <span>Ronie</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="./images/users/user1.jpg" alt="img" />
+                              <span>Ronie</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./images/users/user1.jpg" alt="img" />
+                          <span>Ronie</span>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <img src="./images/users/user1.jpg" alt="img" />
+                              <span>Ronie</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="./images/users/user1.jpg" alt="img" />
+                              <span>Ronie</span>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#">
+                              <img src="./images/users/user1.jpg" alt="img" />
+                              <span>Ronie</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./images/users/user1.jpg" alt="img" />
+                          <span>Ronie</span>
+                        </a>
+                        <ul>
+                          <li>
+                            <a href="#">
+                              <img src="./images/users/user1.jpg" alt="img" />
+                              <span>Ronie</span>
+                            </a>
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </section>
+            <!-- MLM diagam section end  -->
+          </section>
+          <section id="menu1" class="tab-pane fade">
+            <h3>Upload Images/Photos of the events</h3>
+            <hr />
+            <form>
+              <div class="mb-3">
+                <input
+                  type="file"
+                  class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                  id="images"
+                />
+              </div>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped progress-bar-animated bg-success"
+                  style="width: 70%"
+                ></div>
+              </div>
+              <button type="submit" class="btn btn-danger px-4 my-3">
+                Upload
+              </button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- footer section start  -->
+    <footer>
+      <p class="text-center">
+        Designed by <span class="text-danger"> ♥ </span> Santosh Jha
+      </p>
+    </footer>
+    <!-- footer section end  -->
+
+    <!-- login modal start -->
+
+    <section
+      class="modal fade"
+      id="login"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-header bg-danger-subtle text-danger-emphasis fst-italic"
+          >
+            <h1 class="modal-title fs-5 px-lg-2" id="login">Login</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body p-lg-4">
+            <form>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                  id="password"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-danger px-4 my-3">
+                Login
+              </button>
+            </form>
+            <p>
+              Need account? go to
+              <a href="#register" data-bs-toggle="modal" class="bt">register</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- login modal end -->
+    <!-- register modal start -->
+
+    <section
+      class="modal fade"
+      id="register"
+      aria-hidden="true"
+      aria-labelledby="exampleModalToggleLabel2"
+      tabindex="-1"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div
+            class="modal-header bg-danger-subtle text-danger-emphasis fst-italic"
+          >
+            <h1 class="modal-title fs-5 px-lg-2" id="register">Register</h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+
+          <div class="modal-body p-lg-4">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input
+                  type="text"
+                  class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                  id="name"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input
+                  type="password"
+                  class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                  id="password"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="confPassword" class="form-label"
+                  >Confirm Password</label
+                >
+                <input
+                  type="password"
+                  class="form-control shadow-sm bg-light-subtle border-warning-subtle"
+                  id="confPassword"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-danger px-4 my-3">
+                Register
+              </button>
+            </form>
+            <p>
+              Already register? go to
+              <a href="#login" data-bs-toggle="modal" class="bt">login</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- register modal end -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
